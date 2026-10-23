@@ -1,0 +1,238 @@
+ <!DOCTYPE html>
+<!-- This tells the browser that this is an HTML5 document -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- This makes sure text is displayed correctly (supports Arabic, English, etc.) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive on mobile devices -->
+
+    <title>Learning HTML Full Example</title>
+    <!-- Title that appears in the browser tab -->
+</head>
+
+<body>
+
+    <!-- ========== HEADINGS ========== -->
+    <h1>This is Heading 1 (largest)</h1>
+    <h2>This is Heading 2</h2>
+    <h3>This is Heading 3</h3>
+    <h4>This is Heading 4</h4>
+    <h5>This is Heading 5</h5>
+    <h6>This is Heading 6 (smallest)</h6>
+
+    <hr> <!-- Horizontal line -->
+
+    <!-- ========== PARAGRAPHS & TEXT ========== -->
+    <p>This is a simple paragraph of text.</p>
+    <p>
+        You can make text <b>bold</b>, <i>italic</i>, or <u>underlined</u>.
+    </p>
+    <p>
+        <strong>Strong text</strong> vs <em>emphasized text</em>.
+    </p>
+    <p>
+        This is a line break example.<br>
+        This text will be on a new line.
+    </p>
+
+    <!-- ========== LINKS ========== -->
+    <h2>Links</h2>
+    <a href="https://www.google.com">Visit Google (same tab)</a><br>
+    <a href="https://www.wikipedia.org" target="_blank">Visit Wikipedia (new tab)</a><br>
+    <a href="#section1">Go to Section 1 in this page</a>
+    <link rel="stylesheet" href="G:\My Drive\Back End Black Horse\Session9\HTML&CSS&JS\CSS Files\css_File.css">
+    <hr>
+
+    <!-- ========== IMAGES ========== -->
+   
+    <h2>Images</h2>
+    <!-- Simple square -->
+    <img src="G:\My Drive\Back End Black Horse\Session9\HTML&CSS&JS\Resources\Images\Apple.gif" alt="Placeholder image">
+
+    <!-- Custom size + text -->
+    <p>Image with width and height:</p>
+    <img src="G:\My Drive\Back End Black Horse\Session9\HTML&CSS&JS\Resources\Images\Run.gif" alt="Rectangle image" width="500" height="700">
+
+    <hr>
+
+    <!-- ========== LISTS ========== -->
+    <h2>Lists</h2>
+
+    <!-- Unordered list -->
+    <h3>Unordered List (bullets)</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+
+    <!-- Ordered list -->
+    <h3>Ordered List (numbers)</h3>
+    <ol>
+        <li>First step</li>
+        <li>Second step</li>
+        <li>Third step</li>
+    </ol>
+
+    <!-- Nested list -->
+    <h3>Nested List</h3>
+    <ul>
+        <li>Programming Languages
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <!-- ========== TABLES ========== -->
+    <h2>Tables</h2>
+    <table border="1">
+        <!-- Table with border attribute (simple way without CSS) -->
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>22</td>
+            <td>Egypt</td>
+        </tr>
+        <tr>
+            <td>Maryam</td>
+            <td>21</td>
+            <td>Saudi Arabia</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- ========== FORMS ========== -->
+    <h2>Forms</h2>
+    <form action="/submit" method="post">
+        <!-- Text input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="username" placeholder="Enter your name">
+        <br><br>
+
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="useremail" placeholder="Enter your email">
+        <br><br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="userpassword">
+        <br><br>
+
+        <!-- Radio buttons (choose one) -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Checkbox (choose many) -->
+        <p>Hobbies:</p>
+        <input type="checkbox" id="reading" name="hobby" value="Reading">
+        <label for="reading">Reading</label><br>
+
+        <input type="checkbox" id="sports" name="hobby" value="Sports">
+        <label for="sports">Sports</label><br>
+
+        <input type="checkbox" id="music" name="hobby" value="Music">
+        <label for="music">Music</label>
+        <br><br>
+
+        <!-- Select dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="egypt">Egypt</option>
+            <option value="ksa">Saudi Arabia</option>
+            <option value="usa">USA</option>
+        </select>
+        <br><br>
+
+        <!-- Textarea -->   
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="usermessage" rows="4" cols="40"></textarea>
+        <br><br>
+
+        <!-- File upload -->
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="userfile">
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+        <!-- Reset button -->
+        <input type="reset" value="Reset">
+    </form>
+
+    <hr>
+
+    <!-- ========== MULTIMEDIA ========== -->
+    <h2>Multimedia</h2>
+
+    <!-- Audio -->
+    <h3>Audio Example</h3>
+    <audio controls>
+        <source src="G:\My Drive\Back End Black Horse\Session9\HTML&CSS&JS\Resources\Sounds\8Iypl7U-VnM.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!-- Video -->
+    <h3>Video Example</h3>
+    <video width="320" height="240" controls>
+        <source src="G:\My Drive\Back End Black Horse\Session9\HTML&CSS&JS\Resources\Videos\Download.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <hr>
+
+    <!-- ========== SECTION & DIV ========== -->
+    <h2 id="section1">Sections</h2>
+    <div>
+        <h3>This is a div container</h3>
+        <p>Div is a block-level container for grouping elements.</p>
+    </div>
+
+    <section>
+        <h3>This is a section</h3>
+        <p>Section is used to define a logical grouping of content.</p>
+    </section>
+
+    <article>
+        <h3>This is an article</h3>
+        <p>Article is used for independent, self-contained content.</p>
+    </article>
+
+    <aside>
+        <h3>This is an aside</h3>
+        <p>Aside usually contains side content like ads, links, or tips.</p>
+    </aside>
+
+    <hr>
+    <style>
+        div { background-color: lightblue; padding: 10px; margin: 5px; }
+        section { background-color: lightgreen; padding: 10px; margin: 5px; }
+        article { background-color: lightyellow; padding: 10px; margin: 5px; }
+        aside { background-color: lightpink; padding: 10px; margin: 5px; }
+    </style>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p>&copy; 2025 My First HTML Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

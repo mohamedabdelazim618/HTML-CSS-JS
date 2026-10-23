@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page Layout Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .container {
+      display: flex;
+      margin: 20px;
+    }
+
+    .main-content {
+      flex: 3;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #f8bbd0;
+      padding: 15px;
+      margin-left: 20px;
+      border-radius: 8px;
+    }
+
+    div {
+      background-color: #e3f2fd;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    section {
+      background-color: #c8e6c9;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    article {
+      background-color: #fff9c4;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="script" href="script.js">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Articles</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div>
+    <h2>Welcome!</h2>
+    <p>This is the homepage introduction.</p>
+  </div>
+
+  <div class="container">
+    <div class="main-content">
+      <!-- SECTION -->
+      <section>
+        <h2>News Section</h2>
+        <p>Latest updates and announcements.</p>
+      </section>
+
+      <!-- ARTICLE -->
+      <article>
+        <h2>Article of the Day</h2>
+        <p>An independent, self-contained piece of content for readers.</p>
+      </article>
+    </div>
+
+    <!-- ASIDE -->
+    <aside>
+      <h2>Sidebar</h2>
+      <ul>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Tips & Tricks</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
